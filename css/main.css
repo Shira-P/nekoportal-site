@@ -45,8 +45,11 @@ header ul {
   display: flex;
 }
 
+header ul li {
+  padding-left: 30px;
+}
+
 header ul small {
-  padding-right: 30px;
   text-align: left;
   display: block;
 }

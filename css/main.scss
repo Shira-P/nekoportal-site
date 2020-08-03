@@ -36,8 +36,12 @@ header {
     ul {
         display: flex;
 
+        li {
+            padding-left: 30px;
+        }
+        
         small {
-            padding-right: 30px;
+            // padding-right: 30px;
             text-align: left;
             display: block;
         }
