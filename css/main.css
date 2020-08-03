@@ -59,8 +59,23 @@ header ul small {
 .content-header {
   padding: 1.5em;
   background: url("../images/white-sakura.jpg");
-  height: 10em;
+  height: 20em;
   background-position: 30% 55%;
   background-size: cover;
+}
+
+.slogan {
+  padding: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.slogan .slogan-en {
+  font-size: 3em;
+}
+
+.slogan .slogan-th {
+  font-size: 2em;
 }
 /*# sourceMappingURL=main.css.map */
