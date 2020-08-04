@@ -40,8 +40,6 @@
   position: absolute;
   width: 100%;
   visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
   opacity: 0;
 }
 
@@ -49,13 +47,11 @@
   visibility: visible;
   background: whitesmoke;
   margin-top: 25px;
-  padding-bottom: 25px;
+  height: 50vh;
   overflow: hidden;
+  opacity: 1;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  opacity: 1;
 }
 
 * {
@@ -101,7 +97,7 @@ header {
 header .logo {
   font-size: 1.8em;
   font-weight: bold;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 header ul {
@@ -172,7 +168,7 @@ header ul li small {
     font-weight: bold;
   }
   header .master-nav {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   header .menu {
     position: relative;
@@ -190,7 +186,7 @@ header ul li small {
             flex-direction: row;
   }
   header ul li {
-    padding: 0 15px;
+    padding: 0 20px;
     border-bottom: 0px;
   }
   header ul small {

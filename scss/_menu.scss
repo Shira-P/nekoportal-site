@@ -47,18 +47,16 @@
     position: absolute;
     width: 100%;
     visibility: hidden;
-    transform: translate3d(0, 0, 0);
     opacity: 0;
 
     &.show {
         visibility: visible;
         background: whitesmoke;
         margin-top: 25px;
-        padding-bottom: 25px;
+        height: 50vh;
         overflow: hidden;
-        @include easeOut;
-        transform: translate3d(0, 0, 0);
         opacity: 1;
+        @include easeOut;
     }
 
 }
