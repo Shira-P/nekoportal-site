@@ -1,4 +1,8 @@
 // For menu button
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
 .menu-btn {
     position: absolute;
     z-index: 3;
@@ -11,5 +15,50 @@
         height: 3px;
         margin: 0 0 5px 0;
         background: black;
+        @include easeOut;
     }
+
+    // Rotate BTN to X
+    &.close {
+        transform: rotate(180deg);
+        @include easeOut;
+
+        .btn-line {
+            // Line 1 - Rotate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            // Line 2 - Hide
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            // Line 3 - Rotate
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+
+    &.show {
+        visibility: visible;
+        background: whitesmoke;
+        margin-top: 25px;
+        padding-bottom: 25px;
+        overflow: hidden;
+        @include easeOut;
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
 }

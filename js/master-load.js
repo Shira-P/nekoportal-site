@@ -8,22 +8,22 @@ document.getElementById("master-header").innerHTML = `
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">
+            <nav class="master-nav">
+                <ul class="menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             HOME
                             <small>หน้าหลัก</small>
                         </a>
                     </li>
-                    <li>
-                        <a href="blogs.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">
                             BLOGS
                             <small>บล็อกทีมงาน</small>
                         </a>
                     </li>
-                    <li>
-                        <a href="contact.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
                             CONTACT
                             <small>ติดต่อเรา</small>
                         </a>

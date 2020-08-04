@@ -11,6 +11,51 @@
   height: 3px;
   margin: 0 0 5px 0;
   background: black;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 0;
+}
+
+.menu.show {
+  visibility: visible;
+  background: whitesmoke;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 * {
@@ -35,7 +80,7 @@ ul {
 }
 
 .master-header {
-  padding: 1.5em;
+  padding: 1.5em 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -56,6 +101,7 @@ header {
 header .logo {
   font-size: 1.8em;
   font-weight: bold;
+  padding: 0 15px;
 }
 
 header ul {
@@ -66,18 +112,21 @@ header ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 10%;
 }
 
 header ul li {
-  padding-top: 25px;
-  text-align: center;
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #e784a2;
 }
 
-header ul small {
+header ul li small {
   text-align: left;
+  display: block;
 }
 
 .master-footer {
+  padding-right: 1.5em;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -122,6 +171,15 @@ header ul small {
     font-size: 1.8em;
     font-weight: bold;
   }
+  header .master-nav {
+    padding: 0 15px;
+  }
+  header .menu {
+    position: relative;
+    visibility: visible;
+    padding: 0;
+    opacity: 1;
+  }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,13 +190,16 @@ header ul small {
             flex-direction: row;
   }
   header ul li {
-    padding-top: 0;
-    padding-left: 30px;
-    text-align: left;
+    padding: 0 15px;
+    border-bottom: 0px;
   }
   header ul small {
     text-align: left;
     display: block;
+  }
+  .menu-btn {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=main.css.map */

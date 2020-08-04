@@ -21,7 +21,7 @@ ul {
 }
 
 .master-header {
-    padding: 1.5em;
+    padding: 1.5em 0;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -30,29 +30,34 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
     .logo {
         font-size: 1.8em;
         font-weight: bold;
+        padding: 0 15px;
     }
 
     ul {
         display: flex;
         flex-direction: column;
-
-        li {
-            padding-top: 25px;
-            text-align: center;
-        }
+        padding: 0 10%;
         
-        small {
-            // padding-right: 30px;
-            text-align: left;
+        li {
+            padding: 15px 0 10px;
+            border-bottom: 1px solid rgb(231, 132, 162);
+
+            small {
+                // padding-right: 30px;
+                text-align: left;
+                display: block;
+            }
         }
     }
 }
 
 .master-footer {
+    padding-right: 1.5em;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -79,7 +84,7 @@ header {
     }
 }
 
-// Screen Size >= 550px
+// Screen Size >= 750px
 @media (min-width: 750px) {
     header {
         display: flex;
@@ -90,14 +95,24 @@ header {
             font-size: 1.8em;
             font-weight: bold;
         }
+
+        .master-nav {
+            padding: 0 15px;
+        }
+
+        .menu {
+            position: relative;
+            visibility: visible;
+            padding: 0;
+            opacity: 1;
+        }
     
         ul {
             display: flex;
             flex-direction: row;
             li {
-                padding-top: 0;
-                padding-left: 30px;
-                text-align: left;
+                padding: 0 15px;
+                border-bottom: 0px;
             }
             
             small {
@@ -106,5 +121,10 @@ header {
                 display: block;
             }
         }
+    }
+
+    .menu-btn {
+        opacity: 0;
+        visibility: hidden;
     }
 }
