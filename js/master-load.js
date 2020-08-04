@@ -3,6 +3,11 @@
 document.getElementById("master-header").innerHTML = `
     <header>
             <a href="#" class="logo">NEKOPORTAL</a>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
             <nav>
                 <ul>
                     <li>

@@ -1,3 +1,18 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -29,6 +44,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -43,15 +62,19 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header ul li {
-  padding-left: 30px;
+  padding-top: 25px;
+  text-align: center;
 }
 
 header ul small {
   text-align: left;
-  display: block;
 }
 
 .master-footer {
@@ -80,5 +103,42 @@ header ul small {
 
 .slogan .slogan-th {
   font-size: 2em;
+}
+
+@media (min-width: 750px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header ul li {
+    padding-top: 0;
+    padding-left: 30px;
+    text-align: left;
+  }
+  header ul small {
+    text-align: left;
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

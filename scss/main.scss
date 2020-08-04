@@ -1,3 +1,5 @@
+@import "menu";
+
 * {
     box-sizing: border-box;
 }
@@ -26,6 +28,7 @@ ul {
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     .logo {
@@ -35,15 +38,16 @@ header {
 
     ul {
         display: flex;
+        flex-direction: column;
 
         li {
-            padding-left: 30px;
+            padding-top: 25px;
+            text-align: center;
         }
         
         small {
             // padding-right: 30px;
             text-align: left;
-            display: block;
         }
     }
 }
@@ -72,5 +76,35 @@ header {
     }
     .slogan-th {
         font-size: 2em;
+    }
+}
+
+// Screen Size >= 550px
+@media (min-width: 750px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                padding-top: 0;
+                padding-left: 30px;
+                text-align: left;
+            }
+            
+            small {
+                // padding-right: 30px;
+                text-align: left;
+                display: block;
+            }
+        }
     }
 }
