@@ -1,4 +1,8 @@
 @import "menu";
+@import "home";
+
+$primary_sakura: #ffb7c5;
+$sub_sakura: dark($primary_sakura, 0.8);
 
 * {
     box-sizing: border-box;
@@ -62,11 +66,24 @@ header {
     margin-bottom: 1em;
 }
 
+.parallax {
+        /* The image used */
+    background-image: url("/images/parallax_white.jpg");
+
+    /* Set a specific height */
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+// Default setup for content-header -> Override in sub <page>.scss
 .content-header {
     padding: 1.5em;
-    background: url("../images/white-sakura.jpg");
     height: 20em;
-    background-position: 30% 55%;
     background-size: cover;
 }
 

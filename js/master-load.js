@@ -1,5 +1,4 @@
 // Master-page loader
-
 document.getElementById("master-header").innerHTML = `
     <header>
             <a href="#" class="logo">NEKOPORTAL</a>
@@ -33,5 +32,9 @@ document.getElementById("master-header").innerHTML = `
         </header>
     `
 
-document.getElementById("master-footer").innerHTML = 
-`<div class="copyright"><h4>Nekoportal | เครือแมววาร์ป &copy 2019 - ` + new Date().getFullYear() + `</h4></div>`
+document.getElementById("master-footer").innerHTML = `
+<div class="copyright"><h4>Nekoportal | เครือแมววาร์ป &copy 2019 - ` 
++ new Date().getFullYear() 
++ `</h4></div>
+`
+
