@@ -1,4 +1,6 @@
 // Start from content-header
+$primary_sakura: #fd9db1;
+
 .content-header {
     background: url("../images/rz-white-sakura.jpg");
     background-position: 30% 55%;
@@ -24,12 +26,20 @@
     align-items: center;
 
     .wrapper-founder {
-        margin: 4em;
-        width: min(300px);
+        margin: 2em 4em;
+        width: min(350px);
+        
+        .title {
+            text-align: center;
+
+            h2 {
+                margin: 0 0 0.6em 0;
+            }
+        }
 
         .info-card {
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            background: whitesmoke;
+            background: white;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
@@ -37,14 +47,14 @@
 
             .image {
                 padding: 20px;
-                border-bottom: 3px solid #fd9db1;
+                border-bottom: 3px solid $primary_sakura;
             }
 
             img {
                 border-radius: 50%;
             }
 
-            h4 { 
+            h3 { 
                 margin: 0;
                 padding: 20px 10px 8px;
             }

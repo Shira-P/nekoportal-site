@@ -49,6 +49,7 @@
     width: 100%;
     visibility: hidden;
     opacity: 0;
+    @include easeOut;
 
     &.show {
         visibility: visible;
@@ -64,6 +65,12 @@
 
 @media (min-width: 750px) {
     .menu-btn {
+        transition: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu {
         transition: none;
     }
 

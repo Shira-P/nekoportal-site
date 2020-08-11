@@ -1,7 +1,7 @@
 @import "menu";
 @import "home";
 
-$primary_sakura: #ffb7c5;
+$primary_sakura: #fd9db1;
 $sub_sakura: dark($primary_sakura, 0.8);
 
 * {
@@ -49,7 +49,7 @@ header {
         
         li {
             padding: 15px 0 10px;
-            border-bottom: 1px solid #ffb7c5;
+            border-bottom: 1px solid $primary_sakura;
 
             small {
                 // padding-right: 30px;
@@ -138,10 +138,5 @@ header {
                 display: block;
             }
         }
-    }
-
-    .menu-btn {
-        opacity: 0;
-        visibility: hidden;
     }
 }
